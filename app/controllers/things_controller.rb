@@ -9,6 +9,7 @@ class ThingsController < ApplicationController
   end
 
   def edit
+    @places = Place.all
     @thing = Thing.find(params[:id])
   end
 
@@ -39,10 +40,11 @@ class ThingsController < ApplicationController
   end
 
   def new
+    @places = Place.all
     @thing = Thing.new
   end
 
   def thing_params
-    params.require(:thing).permit(:name, :description, :quantity)
+    params.require(:thing).permit(:name, :description, :quantity, :place_id)
   end
 end

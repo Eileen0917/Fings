@@ -15,5 +15,10 @@
   <%= @thing.quantity %>
 </p>
 
+<p>
+  <strong>Place:</strong>
+  <%= @thing.place.try(:name) %>
+</p>
+
 <%= link_to 'Edit', edit_thing_path(@thing) %> |
 <%= link_to 'Back', things_path %>

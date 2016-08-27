@@ -26,6 +26,11 @@
     <%= f.text_area :quantity %>
   </div>
 
+  <div class="field">
+    <%= f.label :place_id %>
+    <%= f.select :place_id, places.map { |place| [place.name, place.id] } %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
