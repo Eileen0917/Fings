@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="container big-text">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @thing.name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @thing.name %>
+	</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @thing.description %>
-</p>
+	<p>
+	  <strong>Description:</strong>
+	  <%= @thing.description %>
+	</p>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @thing.quantity %>
-</p>
+	<p>
+	  <strong>Quantity:</strong>
+	  <%= @thing.quantity %>
+	</p>
 
-<p>
-  <strong>Place:</strong>
-  <%= @thing.place.try(:name) %>
-</p>
+	<p>
+	  <strong>Place:</strong>
+	  <%= @thing.place.try(:name) %>
+	</p>
 
-<%= link_to 'Edit', edit_thing_path(@thing) %> |
-<%= link_to 'Back', things_path %>
+	<%= link_to 'Edit', edit_thing_path(@thing) , class: 'btn btn-default'%> |
+	<%= link_to 'Back', things_path , class: 'btn btn-default'%>
+</div>
