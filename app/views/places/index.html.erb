@@ -17,16 +17,16 @@
         <tr>
           <td><%= place.name %></td>
           <td><%= place.description %></td>
-          <td><%= link_to 'Show', place, class: 'btn btn-default btn-xs' %></td>
-          <td><%= link_to 'Edit', edit_place_path(place), class: 'btn btn-default btn-xs' %></td>
-          <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+          <td><%= link_to 'Show', place, class: 'btn btn-default btn-s' %></td>
+          <td><%= link_to 'Edit', edit_place_path(place), class: 'btn btn-default btn-s' %></td>
+          <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-s' %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
   <br>
-  <%= link_to 'New Place', new_place_path %>
-  <%= link_to 'See Things', things_path %>
+  <%= link_to 'New Place', new_place_path, class: 'btn btn-default btn-s' %>
+  <%= link_to 'See Things', things_path, class: 'btn btn-default btn-s' %>
   
 </div>

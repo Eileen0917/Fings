@@ -1,0 +1,18 @@
+
+
+<div class="container big-text">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @place.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @place.description %>
+  </p>
+
+  <%= link_to 'Thing', edit_place_path(@place) , class: 'btn btn-default'%> |
+  <%= link_to 'Place', places_path , class: 'btn btn-default'%>
+</div>

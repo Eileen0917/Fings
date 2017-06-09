@@ -21,14 +21,14 @@
           <td><%= thing.description %></td>
           <td><%= thing.quantity %></td>
           <td><%= thing.place.try(:name) %></td>
-          <td><%= link_to 'Show', thing, class: 'btn btn-default btn-xs' %></td>
-          <td><%= link_to 'Edit', edit_thing_path(thing), class: 'btn btn-default btn-xs' %></td>
-          <td><%= link_to 'Destroy', thing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+          <td><%= link_to 'Show', thing, class: 'btn btn-default btn-s' %></td>
+          <td><%= link_to 'Edit', edit_thing_path(thing), class: 'btn btn-default btn-s' %></td>
+          <td><%= link_to 'Destroy', thing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-s' %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
-  <%= link_to 'New Thing', new_thing_path %>
-  <%= link_to 'See Places', places_path %>
+  <%= link_to 'New Thing', new_thing_path , class: 'btn btn-default btn-s'%>
+  <%= link_to 'See Places', places_path , class: 'btn btn-default btn-s'%>
 </div>

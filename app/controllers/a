@@ -1,0 +1,7 @@
+places_selections = []
+
+places.each do |place|
+  places_selections << [place.name, place.id]
+end
+
+places.map { |place| [place.name, place.id] }

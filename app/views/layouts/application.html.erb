@@ -9,6 +9,24 @@
   </head>
 
   <body>
+	  <header class="navbar  navbar-inverse">
+	    <div class="navbar-class">
+	      <div class="container">
+
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">HOME</a></li>
+	          <li><%=link_to "Things", places_path%></li>
+	          <li><%=link_to "Places", things_path %></li>
+	          <li><a href="#">CONTACT</a></li>
+	        </ul>
+
+
+	      </div>
+	    </div>
+	  </header>
     <%= yield %>
   </body>
 </html>
